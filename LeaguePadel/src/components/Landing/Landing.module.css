@@ -1,0 +1,48 @@
+.back{
+background: url('https://edge.99images.com/wallpapers/tennis-hd-4k-wallpaper-1920x1200-desktop-background-iphone-android-190759.jpg') center;
+margin:0;
+width: 100vh;
+height: 100vh;
+
+}
+
+
+.card{
+    
+   overflow: hidden;
+   background-size:cover;
+   display: grid;
+   place-items: center;
+
+}
+.cardInfo{
+    color: hsl(0, 0%, 90%);
+    text-align: center;
+}
+h2{
+    font-size: 4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transform: scale(2);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+p{
+    font-size: 1.6rem;
+    padding-left: 0;
+    transform: scale(1.2);
+    opacity: 0;
+    transition: 0.4s;
+}
+.cardInfo:hover{
+    h2{
+        opacity:0.8;
+        transform: scale(1);
+    }
+    p{
+        opacity: 0.6;
+        transform: scale(1);
+    }
+}
