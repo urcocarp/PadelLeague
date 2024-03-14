@@ -1,0 +1,17 @@
+.conteiner{
+ font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+ color: #fff;
+ border: 1px solid #00efff;
+ background-color:#162838b2; 
+ border-radius: 10px;
+
+}
+
+h1{
+    position:relative;
+    color:transparent;
+    -webkit-text-stroke: 1px #00efff;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin-left: 2rem;
+}

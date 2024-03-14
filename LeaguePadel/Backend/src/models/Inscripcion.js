@@ -3,32 +3,32 @@ const sequelize = require('../config/database');
 
 
 
-
-
 const Inscripcion = sequelize.define('Inscripcion', {
+    Id:{
+    type:DataTypes.NUMBER,
+    primaryKey:true,
+    allowNull:false
+      },
 
-    nombreJugador1: {
+     Player1: {
         type: DataTypes.STRING,
         allowNull: false
       },
-    nombreJugador2: {
+    Player2: {
         type: DataTypes.STRING,
         allowNull: false
       },
-    categoria:{
-          type: DataTypes.ENUM('octava', 'septima', 'sexta', 'quinta', 'cuarta', 'tercera', 'segunda', 'primera', 'elite'),
-          allowNull: false
-      },
-    estadoPago: {
+  
+    Pay: {
       type: DataTypes.ENUM('pendiente', 'pagado'),
       allowNull: false,
       defaultValue: 'pendiente'
     },
-    monto: {
+    Amount: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false
     },
     
   });
-
+      //sxta=[{}]
   module.exports= Inscripcion;

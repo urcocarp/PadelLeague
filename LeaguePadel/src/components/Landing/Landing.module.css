@@ -1,13 +1,135 @@
-.back{
-background: url('https://edge.99images.com/wallpapers/tennis-hd-4k-wallpaper-1920x1200-desktop-background-iphone-android-190759.jpg') center;
-margin:0;
-width: 100vh;
-height: 100vh;
 
+.card{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1;
+    width : 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0.9;
+    background-color:#162838;
+}
+.cardInfo{
+    color:#ffff;
+    padding: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+   
+}
+h2{
+    position: relative;
+    font-size: 5rem;
+    color:transparent;
+    -webkit-text-stroke: 1px #00efff;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+h2 span {
+    display: inline-flex;
+    transition: 0,5s ease-in-out;
+    filter: drop-shadow(0 0 15px #00efff);
+}
+h2 span:nth-child(even)
+{
+    overflow:hidden;
+    letter-spacing: -1em;
+
+}
+h2:hover ~ span:nth-child(even),
+h2:hover span:nth-child(even){
+
+    letter-spacing: 0;
+    color: #00efff;
+}
+
+.button{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    padding: 1em 2.7em;
+    font-weight:500;
+    background: #1F2937;
+    color: #00efff;
+    border:1px  solid #00efff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    margin-left: 90%;
+}
+.transition{
+    transition-timing-function:cubic-bezier(0, 0, 0.2, 1) ;
+    transition-duration: 500ms;
+    background-color: rgba(#00efff);
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+.gradiant{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6rem;
+    margin-top: -0.25em;
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)rgba(0,0,0,0.3));
+
+}
+.label{
+position:relative;
+top: -1px;
+}
+.button:hover.transition{
+    width: 14em; height: 14em;
+}
+
+.button:active{
+    transform: scale(0.97);
+}
+.Qui{
+    text-decoration: none;
+    color: transparent;
+    font-size: 22px;
+    padding: 1rem 2rem;
+    -webkit-text-stroke: 0.5px #00efff;
+    margin-right: 60%;
+   
+   
 }
 
 
-.card{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .card{
+    background: url('https://edge.99images.com/wallpapers/tennis-hd-4k-wallpaper-1920x1200-desktop-background-iphone-android-190759.jpg') center;
+    margin:0;
+    width: 100vh;
+    height: 100vh;
     
    overflow: hidden;
    background-size:cover;
@@ -45,4 +167,4 @@ p{
         opacity: 0.6;
         transform: scale(1);
     }
-}
+} */
